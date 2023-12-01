@@ -1,0 +1,114 @@
+*{ /*resetando as configurações*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*Inserindo imagem no bg do site e transformando em um patter*/
+    background-image: url('/images/fundo.jpg');
+    background-repeat: repeat;
+    background-size: 500px 500px;
+    padding-top: 170px; /*Espaçamento o topo*/
+    font-family: 'Mohave', sans-serif;
+}
+
+header {
+    display: flex; /*elementos lado a lado*/
+    align-items: center; /*alinhando elementos*/
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
+
+header img {
+    height: 80px;
+    margin-right: 16px;
+    margin-top: 25px;
+}
+
+header h1 {
+    margin-top: 25px;
+    font-family: 'Mohave', sans-serif;
+}
+
+.container {
+    padding-bottom: 8px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto; /*centralizando na horizontal*/
+    background-color: #e7e7e7;
+}
+
+#nome-atividade {
+    font-size: 15px;
+    border: none;
+    margin: 16px;
+    padding-inline: 40px;
+    text-align: left;
+    height: 50px;
+}
+
+#nota-atividade {
+    font-size: 15px;
+    border: none;
+    margin: 16px;
+    padding-inline: 20px;
+    height: 50px;
+    text-align: left;
+}
+
+form {
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between;    
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #0c9038;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    padding-inline: 40px;
+    height: 50px;
+    font-family: 'Mohave', sans-serif;    
+}
+
+table{
+    width: 90%;
+    margin: 16px;
+}
+
+table th {
+    border-bottom: 2px solid #000;
+    padding: 16px;
+}
+
+table td {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); /*rgba onde o vaolr de alfa é a transparência da cor*/
+}
+
+table td img {
+    height: 50px;
+}
+
+.resultado {
+    padding: 8px;
+    font-weight: bold;
+    color: #fff;
+    background-color: black;
+    border-radius: 3px; /*Inserindo borda arredondada*/
+}
+
+.aprovado {
+    background-color: #0c9038;
+}
+
+.reprovado {
+    background-color: red;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de médias</title>
+    <link rel="shortcut icon" type="imagex/png" href="./images/logo.png"> <!--Inserindo ícone na aba do navegador-->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/logo.png" alt="Capelo e diploma">
+            <h1>Calculadora de médias</h1>
+            <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Instalando Fontes do Google -->
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="/main.css">
+        </header>
+        <form id="form-atividade">
+            <input id="nome-atividade" type="text" required placeholder="Nome da atividade">
+            <input id="nota-atividade" type="number" required placeholder="Nota" min="0" max="10">
+            <button type="submit">Adicionar</button>
+        </form>
+        <table cellspacing="0"><!-- Inserindo tabela-->
+            <thead><!-- Cabeçalho tabela-->
+                <tr><!-- Células tabela-->
+                    <th><!-- Conteúdo Células tabela-->
+                        Nome da atividade
+                    </th>
+                    <th>
+                        Nota
+                    </th>
+                    <th>
+                        Aprovado
+                    </th>
+                </tr>
+            </thead>
+            <tbody><!-- Corpo tabela-->
+            </tbody>
+            <tfoot><!-- Rodapé tabela-->
+                <tr>
+                    <td>Média final</td>
+                    <td id="media-final-valor">0</td>
+                    <td id="media-final-resultado"><span class="resultado aprovado"> --- </span></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
